@@ -1,0 +1,14 @@
+OptMem: a permanent, append-only memory for AI agents.
+
+  {memo} init             create this memory; print the setup block.
+  {memo} wake [part [T]]  read your memory. Run first, every session.
+  {memo} note "..."       record one memory: one short line.
+  {memo} nap [id "..."]   do the pending compressions.
+  {memo} recall <regex>   search every memory ever recorded.
+  {memo} zoom <lo>-<hi>   open a tree node: its two halves.
+  {memo} forget <lo>-<hi> drop a bad summary; nap rebuilds it.
+  {memo} config [NAME=N]  show this memory's sizes, or change one.
+  {memo} import <file>    bulk-load dated memories (bootstrap only).
+
+The memories live in ~/.optmem/memory, or in $MEMORY_DIR if set.
+See github.com/VictorTaelin/OptMem.
